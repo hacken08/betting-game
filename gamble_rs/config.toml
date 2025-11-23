@@ -1,0 +1,26 @@
+[database]
+dbtype = "mysql"
+username = "root"
+password = "sss"
+host = "localhost"
+port = 3306
+db = "game"
+
+
+[server]
+domain = "0.0.0.0"
+port = 5000 
+
+
+[jwt]
+jwt_secret = "jaof23r32dlwk"
+expiration = 3600
+
+[password]
+password_secret = "BDeiR4nE6frohrxWFyGoS816nZ6zpLx-_jSBz_fCw7dxV3qN0z0vfKGBNZIe72RozyEeAJCuMNRZkiaxH7S12Q"
+hash = "G#GWw0rofv3wERD"
+
+
+[author]
+name = "analog-sombra"
+github = "https://github.com/analog_sombra/"

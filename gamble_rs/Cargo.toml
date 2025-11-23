@@ -1,0 +1,49 @@
+[package]
+name = "gamble_rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# --- Database
+sqlx = { version = "0.8.0", features = ["chrono", "mysql", "runtime-tokio-native-tls", "uuid"] }
+# --- Error
+anyhow = "1.0.86"
+thiserror = "1.0.63"
+
+
+# --- Date & Time
+chrono = { version = "0.4.38", features = ["serde"] }
+# --- Log
+log = "0.4.22"
+simple_logger = "5.0.0"
+# --- Web
+axum = { version = "0.7.5", features = ["http2", "macros", "multipart"] }
+hyper = { version = "1.4.1", features = ["full"] }
+tokio = { version = "1.38.0", features = ["full"] }
+tower-cookies = "0.10.0"
+tower-http = { version = "0.5.2", features = ["fs", "cors"] }
+argon2 = { version = "0.5.3", features = ["std"] }
+rand = "0.8.5"
+base64-url = "3.0.0"
+# --- Json
+lazy_static = "1.5.0"
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = "1.0.120"
+serde_with = "3.9.0"
+strum_macros = "0.26.4"
+# --- Utils
+toml = "0.8.14"
+async-trait = "0.1.81"
+regex = "1.10.6"
+uuid = { version = "1.10.0", features = ["serde", "v4", "fast-rng"] }
+validator = { version = "0.18.1", features = ["derive"] }
+hmac = "0.12.1"
+sha2 = "0.10.8"
+jsonwebtoken = "9.3.0"
+axum-auth = "0.7.0"
+tower = { version = "0.4.13", features = ["buffer", "limit"] }
+bytes = "1.7.1"
+axum-extra = "0.9.3"
+struct_iterable = "0.1.1"
+cron-job = "0.2.0"
+strum = "0.26.3"
