@@ -2,12 +2,9 @@ version: '3.9'
 
 
 services:
-  
   mysql:
     image: mysql:latest
     container_name: mysql
-    ports:
-      - 3306:3306
     environment:
       MYSQL_ROOT_PASSWORD: sss
       MYSQL_DATABASE: "game" 
@@ -62,8 +59,9 @@ services:
     container_name: admin_panel
     environment:
       - SERVER_URL=http://backend:5000
-    ports:
-      - '8080:8080'
+      - NEXT_PUBLIC_SERVER_URL=$SERVER_URL
+    env_file:
+      - gamble_web/.env
     depends_on:
       - backend
     networks:

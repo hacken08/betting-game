@@ -96,7 +96,7 @@ export default function DashboardLayout({
               </button>
 
               <Modal
-                animation={false}
+                // animation={false}
                 centered
                 title="Confirm logout"
                 open={isModalOpen}

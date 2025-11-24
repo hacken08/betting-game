@@ -44,7 +44,7 @@ export default function Login() {
     mutationKey: [],
     mutationFn: async (data: LoginForm) => {
       console.log("login function running...");
-      
+      console.log("Request at url: ", `${BASE_URL}/api/auth/login`)
       const responsedata = await axios.post(`${BASE_URL}/api/auth/login`, {
         mobile: data.email,
         password: data.password,
