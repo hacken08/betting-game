@@ -1,8 +1,8 @@
 [database]
 dbtype = "mysql"
 username = "root"
-password = "sss"
-host = "mysql"
+password = ""
+host = "72.61.226.162"
 port = 3306
 db = "game"
 
